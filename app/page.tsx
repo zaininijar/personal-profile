@@ -45,7 +45,7 @@ export default function Home() {
 
       <div className="mt-8">
         <Snippet hideCopyButton hideSymbol variant="flat">
-          <div>
+          <div className="flex flex-wrap items-center justify-center gap-2">
             Explore my personal profile as a
             <Code color="primary" className="ml-2">
               Software Engineer
