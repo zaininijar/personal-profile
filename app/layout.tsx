@@ -3,12 +3,12 @@ import { Metadata, Viewport } from "next";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 
-import { Providers } from "./providers";
-
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import { MobileMenu } from "@/components/mobile-menu";
+
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: {

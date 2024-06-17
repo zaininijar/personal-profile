@@ -16,6 +16,7 @@ import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
+import { usePathname } from "next/navigation";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -27,7 +28,6 @@ import {
   SearchIcon,
   Logo,
 } from "@/components/icons";
-import { usePathname } from "next/navigation";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -59,11 +59,11 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Logo
-              src={""}
               alt=""
-              width={32}
               height={32}
+              src={""}
               style={{ filter: "invert(1)" }}
+              width={32}
             />
             <p className="font-bold text-inherit">AZN</p>
           </NextLink>

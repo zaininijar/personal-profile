@@ -1,8 +1,9 @@
 "use client";
 
 import { Tab, Tabs } from "@nextui-org/tabs";
-import { FlameIcon, GithubIcon, HomeIcon, UserIcon } from "@/components/icons";
 import { usePathname } from "next/navigation";
+
+import { FlameIcon, HomeIcon, UserIcon } from "@/components/icons";
 
 export const MobileMenu = () => {
   const pathname = usePathname();
@@ -10,12 +11,12 @@ export const MobileMenu = () => {
   return (
     <div className="flex md:hidden flex-col place-items-center fixed z-20 pb-2 bottom-0 w-full px-2">
       <Tabs
-        selectedKey={pathname}
-        aria-label="Tabs"
-        color="secondary"
-        variant="bordered"
         fullWidth
+        aria-label="Tabs"
         className="bg-slate-900 rounded-xl"
+        color="secondary"
+        selectedKey={pathname}
+        variant="bordered"
       >
         <Tab
           key="/about"
@@ -27,8 +28,8 @@ export const MobileMenu = () => {
           }
         />
         <Tab
-          href="/"
           key="/"
+          href="/"
           title={
             <div className="flex flex-col items-center justify-center space-x-2">
               <HomeIcon />

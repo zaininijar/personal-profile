@@ -47,7 +47,7 @@ export default function Home() {
         <Snippet hideCopyButton hideSymbol variant="flat">
           <div className="flex flex-wrap items-center justify-center gap-2">
             Explore my personal profile as a
-            <Code color="primary" className="ml-2">
+            <Code className="ml-2" color="primary">
               Software Engineer
             </Code>
           </div>

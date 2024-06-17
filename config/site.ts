@@ -64,6 +64,7 @@ export const siteConfig = {
     twitter: "https://twitter.com/zaininijar",
     discord: "https://discord.gg/zaininijar",
     sponsor: "https://patreon.com/zaininijar",
-    getCv: "https://drive.google.com/file/d/1iifU2dR4X6AIFExfg5BQos-OC0lTvVa7/view"
+    getCv:
+      "https://drive.google.com/file/d/1iifU2dR4X6AIFExfg5BQos-OC0lTvVa7/view",
   },
 };
